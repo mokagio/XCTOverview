@@ -1,26 +1,35 @@
 import XCTest
 @testable import XCTOverview
 
+private var statefulValue: Int = 0
+
 class XCTOverviewTests: XCTestCase {
 
+    // There is no "with error" version of this, yet.
+    override class func setUp() {
+        print("This run before all tests")
+        statefulValue += 1
+    }
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        print("This run before each test")
+        statefulValue += 1
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        print("This runs after each test")
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    // There is no "with error" version of this, yet.
+    override class func tearDown() {
+        print("This runs after each test")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testA() throws {
+        XCTAssertEqual(statefulValue, 2)
     }
 
+    func testB() throws {
+        XCTAssertEqual(statefulValue, 3)
+    }
 }
