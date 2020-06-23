@@ -1,10 +1,3 @@
-//
-//  XCTOverviewUITests.swift
-//  XCTOverviewUITests
-//
-//  Created by Gio on 23/6/20.
-//
-
 import XCTest
 
 class XCTOverviewUITests: XCTestCase {

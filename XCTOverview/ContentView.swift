@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  XCTOverview
-//
-//  Created by Gio on 23/6/20.
-//
-
 import SwiftUI
 
 struct ContentView: View {

@@ -1,10 +1,3 @@
-//
-//  XCTOverviewTests.swift
-//  XCTOverviewTests
-//
-//  Created by Gio on 23/6/20.
-//
-
 import XCTest
 @testable import XCTOverview
 
