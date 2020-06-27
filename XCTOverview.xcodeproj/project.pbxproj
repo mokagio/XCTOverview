@@ -12,7 +12,7 @@
 		3FA2A9DD24A2297300FBAB3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2A9DC24A2297300FBAB3A /* ContentView.swift */; };
 		3FA2A9DF24A2297400FBAB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2A9DE24A2297400FBAB3A /* Assets.xcassets */; };
 		3FA2A9E224A2297400FBAB3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2A9E124A2297400FBAB3A /* Preview Assets.xcassets */; };
-		3FA2A9ED24A2297400FBAB3A /* XCTOverviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2A9EC24A2297400FBAB3A /* XCTOverviewTests.swift */; };
+		3FA2A9ED24A2297400FBAB3A /* SetUpTearDownExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2A9EC24A2297400FBAB3A /* SetUpTearDownExamples.swift */; };
 		3FA2A9F824A2297400FBAB3A /* XCTOverviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2A9F724A2297400FBAB3A /* XCTOverviewUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		3FA2A9E124A2297400FBAB3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FA2A9E324A2297400FBAB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA2A9E824A2297400FBAB3A /* XCTOverviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTOverviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FA2A9EC24A2297400FBAB3A /* XCTOverviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTOverviewTests.swift; sourceTree = "<group>"; };
+		3FA2A9EC24A2297400FBAB3A /* SetUpTearDownExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpTearDownExamples.swift; sourceTree = "<group>"; };
 		3FA2A9EE24A2297400FBAB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA2A9F324A2297400FBAB3A /* XCTOverviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTOverviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA2A9F724A2297400FBAB3A /* XCTOverviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTOverviewUITests.swift; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		3FA2A9EB24A2297400FBAB3A /* XCTOverviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FA2A9EC24A2297400FBAB3A /* XCTOverviewTests.swift */,
 				3FA2A9EE24A2297400FBAB3A /* Info.plist */,
+				3FA2A9EC24A2297400FBAB3A /* SetUpTearDownExamples.swift */,
 				3F261AB124A6E83B007BEB4E /* XCTAssertExamples.swift */,
 			);
 			path = XCTOverviewTests;
@@ -272,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F261AB224A6E83B007BEB4E /* XCTAssertExamples.swift in Sources */,
-				3FA2A9ED24A2297400FBAB3A /* XCTOverviewTests.swift in Sources */,
+				3FA2A9ED24A2297400FBAB3A /* SetUpTearDownExamples.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
