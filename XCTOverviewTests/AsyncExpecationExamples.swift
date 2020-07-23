@@ -35,4 +35,21 @@ class AsyncExpectationExamples: XCTestCase {
 
         XCTAssertEqual(x, 1)
     }
+
+    func testWaitForSingleExpectationInCallback() {
+        let expectation = XCTestExpectation(description: "Async sum completed.")
+
+        asyncSum(1, 2) { sum in
+            XCTAssertEqual(sum, 3)
+            expectation.fulfill()
+        }
+
+        // This code waits for the `expectation` to be fulfilled (i.e. for its `fulfill()` method
+        // to have been called) for `timeout` seconds.
+        wait(for: [expectation], timeout: 0.3)
+    }
+
+    func asyncSum(_ a: Int, _ b: Int, onSummed: @escaping (Int) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) { onSummed(a + b) }
+    }
 }
