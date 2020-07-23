@@ -1,8 +1,8 @@
 import XCTest
 
-class AsynExpectationExamples: XCTestCase {
+class AsyncExpectationExamples: XCTestCase {
 
-    func testExampleOfAsynTestFailure() throws {
+    func testExampleOfAsyncTestFailure() throws {
         // Switch to false to see this test checking async code fail
         let shouldSkip = true
         try XCTSkipIf(shouldSkip, "Skipping example test failing to check async code.")
@@ -19,7 +19,7 @@ class AsynExpectationExamples: XCTestCase {
         XCTAssertEqual(x, 1)
     }
 
-    func testWaitForSingleExpecation() {
+    func testWaitForSingleExpectation() {
         var x = 0
 
         let expectation = XCTestExpectation(description: "Change value of t.")
